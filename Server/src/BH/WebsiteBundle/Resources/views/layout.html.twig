@@ -1,0 +1,31 @@
+{% extends "::layout.html.twig" %}
+
+{% block title %}
+  Mayonnaise - {{ parent() }}
+{% endblock %}
+
+{% block body %}
+
+    <h1>Ze Mayonnaise</h1>
+    <p>
+       Mayonnaise is a thick, creamy dressing often used as a condiment.
+       It is a stable emulsion of oil, egg yolk, and either vinegar or lemon juice,
+       with many options for embellishment with other herbs and spices.
+       Proteins and lecithin in the egg yolk serve as emulsifiers in both
+       mayonnaise and hollandaise sauce. Commercial egg-free alternatives are available
+       for vegans and others who want to avoid animal products and cholesterol,
+       or who are allergic to eggs.</br>
+    </p>
+    <p>
+      <a class="btn btn-primary btn-lg" href="{{ path('bh_website_recipe') }}">
+	I wanna make my own Mayonnaise
+      </a>
+    </p>
+
+     <hr>
+</div>
+
+  {% block bhwebsite_body %}
+  {% endblock %}
+
+{% endblock %}

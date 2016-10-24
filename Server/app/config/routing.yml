@@ -1,0 +1,3 @@
+bh_website:
+    resource: "@BHWebsiteBundle/Resources/config/routing.yml"
+    prefix:   /

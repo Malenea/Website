@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initiale-scale=1">
+
+    <title>{% block title %}BH Website{% endblock %}</title>
+
+    {% block stylesheets %}
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    {% endblock %}
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="header" class="jumbotron">
+	<h1>Mayonnaise</h1>
+	<p>
+	  A wonderful website with the only purpose to worship Mayonnaise
+	</p>
+      </div>
+
+      <div class="row">
+	<div id="menu" class="col-md-3">
+	  <h3>Menu</h3>
+	  <ul class="nav nav-pills nav-stacked">
+	    <li><a href="{{ path('bh_website_homepage') }}">My Home-naise</a></li>
+	    <li><a href="{{ path('bh_website_recipe') }}">Mayonnaise wonderful recipe</a></li>
+	    <li><a href="{{ path('bh_website_mail') }}">Send me a mail-yonnaise</a></li>
+	    </br></br></br></br></br></br></br></br></br></br></br></br>
+	  </ul>
+	</div>
+
+	{% block body %}
+	{% endblock %}
+
+	<hr>
+
+	<footer>
+	  <p>Mayonnaise was updated in @ {{ 'now'|date('Y') }}</p>
+	</footer>
+      </div>
+
+  </body>
+</html>

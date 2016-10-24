@@ -1,0 +1,33 @@
+{% extends "BHWebsiteBundle::layout.html.twig" %}
+
+{% block title %}
+  BH Website - {{ parent() }}
+{% endblock %}
+
+{% block body %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mayonnaise Response</title>
+  </head>
+  <body>
+    <h1>What happened ?</h1>
+
+    <div>
+      <p>
+	The mail you typed was sent</br>
+	You can click the button below to return to the menu</br></br>
+	<a class="btn btn-primary btn-lg" href="{{ path('bh_website_homepage') }}">
+	  Return to homepage
+	</a>
+      </p>
+    </div>
+
+  </body>
+</html>
+
+  {% block bhwebsite_body %}
+  {% endblock %}
+
+{% endblock %}

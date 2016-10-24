@@ -1,0 +1,36 @@
+{% extends "BHWebsiteBundle::layout.html.twig" %}
+
+{% block title %}
+  BH Website - {{ parent() }}
+{% endblock %}
+
+{% block body %}
+
+   <h1>Recipe and may Yonnaise be with you</h1>
+     <p>
+       
+       <h2>Ingredients</h2></br>
+
+        2 whole pastured eggs</br>
+        1 tbsp. apple cider vinegar</br>
+        3/4 tsp. salt</br>
+        2 tsp. prepared mustard</br>
+        2 cups light olive oil (not a vegetable blend)</br></br>
+
+       <h3>Instructions</h3></br>
+
+       Blend eggs, vinegar, salt, and mustard in food processor. While machine is running, slowly add oil, VERY SLOWLY!! Continue until all of the oil has been added and the eggs and oil have formed an emulsion or Mayonnaise. Taste for salt and adjust if needed.</br>
+     </p>
+
+     <p>
+       <a class="btn btn-primary btn-lg" href="https://www.youtube.com/watch?v=qSHXG-5ShFk">
+	 Mayonnaise Youtube
+       </a>
+     </p>
+
+  <hr>
+
+  {% block bhwebsite_body %}
+  {% endblock %}
+
+{% endblock %}

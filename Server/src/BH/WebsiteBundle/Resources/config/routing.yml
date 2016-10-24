@@ -1,0 +1,14 @@
+bh_website_homepage:
+    path:     /
+    defaults:
+        _controller: BHWebsiteBundle:Ws:index
+
+bh_website_recipe:
+    path:     /recipe
+    defaults:
+        _controller: BHWebsiteBundle:Ws:recipe
+
+bh_website_mail:
+    path:     /mail
+    defaults:
+        _controller: BHWebsiteBundle:Ws:mail
